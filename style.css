@@ -15,9 +15,9 @@
 .page {
   min-inline-size: 360px;
   margin: 0;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: var(--main-font);
+  background-color: var(--bg-color, #f3efec);
+  color: var(--text-color, #312a4e);
+  font-family: var(--main-font, "Raleway", Arial, Helvetica, sans-serif);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,7 +53,7 @@ a:focus {
 }
 
 .heading {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, "STIX Two Text", "Times New Roman", Times, serif);
   font-weight: 600;
   line-height: 90%;
   text-align: center;
@@ -74,7 +74,7 @@ a:focus {
 }
 
 .header__logo svg {
-  color: var(--text-color);
+  color: currentColor;
 }
 
 .header__theme-toggler {
@@ -129,7 +129,7 @@ a:focus {
   padding-left: 4px;
   padding-right: 4px;
   margin-right: 2px;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color, #ffab6b);
   font-size: 30px;
   font-weight: 700;
 }
@@ -207,7 +207,7 @@ a:focus {
   display: block;
   width: calc(100% + 4px);
   height: 0.5ex;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color, #ffab6b);
   position: absolute;
   right: -2px;
   bottom: 0.3ex;
@@ -280,11 +280,11 @@ a:focus {
   content: "";
   display: block;
   width: calc(100% + 12px);
-  height: 1ex;
-  background-color: var(--accent-color);
+  height: 0.5ex;
+  background-color: var(--accent-color, #ffab6b);
   position: absolute;
   right: -6px;
-  bottom: -0.1ex;
+  bottom: 0.1ex;
   z-index: -1;
 }
 
